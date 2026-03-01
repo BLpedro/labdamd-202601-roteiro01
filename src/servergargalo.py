@@ -31,7 +31,7 @@ def iniciar_servidor():
         # ...e dorme no serviço!
         # Como não tem threads, ele NÃO volta para o 'accept()'
         # O SO vai segurar alguns na fila, mas logo ela enche.
-        time.sleep(5) 
+        time.sleep(10) 
         
         try:
             conn.send(b"Atendido com sucesso.")
